@@ -1,0 +1,1653 @@
+@@@@@@@@@@@@@@@@@@@ Algorithm starts. @@@@@@@@@@@@@@@@@@@
+################# variables ##################
+(10->8) l_76 = 0.000184277
+(10->5) l_74 = 0.000184277
+(10->2) l_64 = 0.000184277
+(10->3) l_50 = 0.000184277
+(10->7) l_48 = 0.000184277
+(10->6) l_46 = 0.000184277
+(10->1) l_45 = 0.000184277
+(10->0) l_43 = 0.000184277
+(9->5) l_69 = 0.000184277
+(9->2) l_61 = 0.000184277
+(9->1) l_59 = 0.000184277
+(9->0) l_57 = 0.000184277
+(9->6) l_55 = 0.000184277
+(9->3) l_41 = 0.000184277
+(9->7) l_39 = 0.000184277
+(9->8) l_36 = 0.000184277
+(8->10) l_77 = 0.000184277
+(8->6) l_71 = 0.000184277
+(8->9) l_37 = 0.000184277
+(8->4) l_35 = 0.000184277
+(8->2) l_29 = 0.000184277
+(8->3) l_21 = 0.000184277
+(8->0) l_7 = 0.000184277
+(7->0) l_73 = 0.000184277
+(7->10) l_49 = 0.000184277
+(7->9) l_38 = 0.000184277
+(7->4) l_33 = 0.000184277
+(7->2) l_27 = 0.000184277
+(7->5) l_23 = 0.000184277
+(7->3) l_19 = 0.000184277
+(7->1) l_17 = 0.000184277
+(7->6) l_1 = 0.000184277
+(6->4) l_81 = 0.000184277
+(6->8) l_70 = 0.000184277
+(6->9) l_54 = 0.000184277
+(6->3) l_52 = 0.000184277
+(6->10) l_47 = 0.000184277
+(6->0) l_5 = 0.000184277
+(6->7) l_0 = 0.000184277
+(5->3) l_83 = 0.000184277
+(5->10) l_75 = 0.000184277
+(5->9) l_68 = 0.000184277
+(5->4) l_31 = 0.000184277
+(5->2) l_25 = 0.000184277
+(5->7) l_22 = 0.000184277
+(5->1) l_15 = 0.000184277
+(4->6) l_80 = 0.000184277
+(4->3) l_79 = 0.000184277
+(4->2) l_67 = 0.000184277
+(4->8) l_34 = 0.000184277
+(4->7) l_32 = 0.000184277
+(4->5) l_30 = 0.000184277
+(4->1) l_13 = 0.000184277
+(3->5) l_82 = 0.000184277
+(3->4) l_78 = 0.000184277
+(3->6) l_53 = 0.000184277
+(3->10) l_51 = 0.000184277
+(3->9) l_40 = 0.000184277
+(3->8) l_20 = 0.000184277
+(3->7) l_18 = 0.000184277
+(3->1) l_11 = 0.000184277
+(2->4) l_66 = 0.000184277
+(2->10) l_65 = 0.000184277
+(2->9) l_60 = 0.000184277
+(2->8) l_28 = 0.000184277
+(2->7) l_26 = 0.000184277
+(2->5) l_24 = 0.000184277
+(2->1) l_9 = 0.000184277
+(2->0) l_3 = 0.000184277
+(1->0) l_63 = 0.000184277
+(1->9) l_58 = 0.000184277
+(1->10) l_44 = 0.000184277
+(1->7) l_16 = 0.000184277
+(1->5) l_14 = 0.000184277
+(1->4) l_12 = 0.000184277
+(1->3) l_10 = 0.000184277
+(1->2) l_8 = 0.000184277
+(0->7) l_72 = 0.000184277
+(0->1) l_62 = 0.000184277
+(0->9) l_56 = 0.000184277
+(0->10) l_42 = 0.000184277
+(0->8) l_6 = 0.000184277
+(0->6) l_4 = 0.000184277
+(0->2) l_2 = 0.000184277
+w_10 = 8.37625e-06
+w_9 = 8.37625e-06
+w_8 = 8.37625e-06
+w_7 = 8.37625e-06
+w_6 = 8.37625e-06
+w_5 = 8.37625e-06
+w_4 = 8.37625e-06
+w_3 = 8.37625e-06
+w_2 = 8.37625e-06
+w_1 = 8.37625e-06
+w_0 = 8.37625e-06
+(0->1) q_0 = 0.000184277
+(0->4) q_1 = 0.000122852
+(0->5) q_2 = 0.000122852
+(0->7) q_3 = 9.21387e-05
+(1->2) q_4 = 0.000368555
+(4->5) q_5 = 0.000184277
+(4->6) q_6 = 0.000184277
+(3->4) q_7 = 0.000368555
+(3->9) q_8 = 0.000368555
+(0->10) q_9 = 0.000368555
+(10->5) q_10 = 0.000122852
+(10->6) q_11 = 0.000184277
+(0->6) q_12 = 0.000368555
+(6->8) q_13 = 9.21387e-05
+(2->9) q_14 = 7.3711e-05
+(1->9) q_15 = 0.000184277
+(3->8) q_16 = 0.000368555
+(7->9) q_17 = 0.000122852
+(2->3) q_18 = 0.000368555
+(2->6) q_19 = 0.000122852
+(10->8) q_20 = 7.3711e-05
+(6->7) q_21 = 0.000122852
+################# variables ##################
+D(l ,w ,q)= 0.0215605
+------------------------Phase: 1------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.0215605
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.000385307
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0218263
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.0218263
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->7->4]	 Cost: 0.000516798
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0221829
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.0221829
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->9->5]	 Cost: 0.000517069
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0225397
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.0225397
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->7]	 Cost: 0.000421396
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0228305
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.0228305
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->2]	 Cost: 0.000586863
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0230329
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.0230329
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->5]	 Cost: 0.000385833
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0232991
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.0232991
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.000385841
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0235654
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.0235654
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.000587964
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0237682
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.0237682
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.000587388
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0239709
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.0239709
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.00058854
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0241739
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.0241739
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->5]	 Cost: 0.000324678
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0243979
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.0243979
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.000386104
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0246644
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.0246644
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.000590202
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.024868
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.024868
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->8]	 Cost: 0.000293982
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0250708
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.0250708
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.000275537
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0252609
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.0252609
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.000386654
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0255277
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.0255277
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.00058793
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0257306
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.0257306
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->9]	 Cost: 0.000325517
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0259552
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.0259552
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->8->3]	 Cost: 0.000791128
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0262281
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.0262281
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->7->6]	 Cost: 0.000519263
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0265864
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.0265864
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.000276367
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0267771
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.0267771
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->7]	 Cost: 0.000326381
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0270023
+D(l ,w ,q)= 0.0270023
+------------------------Phase: 2------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.0270023
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.000642129
+  Admitted rate = 1
+D(l ,w ,q)= 0.0274321
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.0274321
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->8->4]	 Cost: 0.000576955
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0278302
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.0278302
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->2->5]	 Cost: 0.000576983
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0282283
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.0282283
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->10->7]	 Cost: 0.000586033
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0286327
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.0286327
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->2]	 Cost: 0.000908639
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0289331
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.0289331
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->5]	 Cost: 0.00064211
+  Admitted rate = 1
+D(l ,w ,q)= 0.0293628
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.0293628
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.000642714
+  Admitted rate = 1
+D(l ,w ,q)= 0.0297926
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.0297926
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.000909216
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.030093
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.030093
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.000909216
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0303934
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.0303934
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.0010834
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0307528
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.0307528
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->5]	 Cost: 0.000510045
+  Admitted rate = 1
+D(l ,w ,q)= 0.0310914
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.0310914
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.000642714
+  Admitted rate = 1
+D(l ,w ,q)= 0.0315212
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.0315212
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.000912994
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0318216
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.0318216
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->8]	 Cost: 0.000455212
+  Admitted rate = 1
+D(l ,w ,q)= 0.032122
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.032122
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.000425034
+  Admitted rate = 1
+D(l ,w ,q)= 0.0324018
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.0324018
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.000641822
+  Admitted rate = 1
+D(l ,w ,q)= 0.0328316
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.0328316
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.000909216
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0331319
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.0331319
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->9]	 Cost: 0.000510649
+  Admitted rate = 1
+D(l ,w ,q)= 0.0334706
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.0334706
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->1->3]	 Cost: 0.0010483
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0338323
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.0338323
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->8->6]	 Cost: 0.000641432
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0342748
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.0342748
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.00042534
+  Admitted rate = 1
+D(l ,w ,q)= 0.0345546
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.0345546
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->7]	 Cost: 0.000511271
+  Admitted rate = 1
+D(l ,w ,q)= 0.0348933
+D(l ,w ,q)= 0.0348933
+------------------------Phase: 3------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.0348933
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->9->1]	 Cost: 0.00105233
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0356194
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.0356194
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->2->4]	 Cost: 0.000789156
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0361639
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.0361639
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->1->5]	 Cost: 0.00100348
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0368563
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.0368563
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->7]	 Cost: 0.000715211
+  Admitted rate = 1
+D(l ,w ,q)= 0.0373345
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.0373345
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->2]	 Cost: 0.0014276
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0378126
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.0378126
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->3->5]	 Cost: 0.000924501
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0384505
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.0384505
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->8->6]	 Cost: 0.0010529
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.039177
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.039177
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.0014276
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0396552
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.0396552
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.00142632
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0401334
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.0401334
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->8->10]	 Cost: 0.00161295
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0406898
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.0406898
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->3->5]	 Cost: 0.000787821
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0412334
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.0412334
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->3->6]	 Cost: 0.00105354
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0419604
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.0419604
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.00143314
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0424386
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.0424386
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->9->8]	 Cost: 0.000567101
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0428299
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.0428299
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->5->9]	 Cost: 0.00064724
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0432764
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.0432764
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.00107343
+  Admitted rate = 1
+D(l ,w ,q)= 0.0440028
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.0440028
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.00142956
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0444809
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.0444809
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->5->9]	 Cost: 0.000789106
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0450254
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.0450254
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->1->3]	 Cost: 0.00161207
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0455596
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.0455596
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->7->6]	 Cost: 0.000917593
+  Admitted rate = 1
+D(l ,w ,q)= 0.0461701
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.0461701
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.000668113
+  Admitted rate = 1
+D(l ,w ,q)= 0.046616
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.046616
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->4->7]	 Cost: 0.000662954
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0470735
+D(l ,w ,q)= 0.0470735
+------------------------Phase: 4------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.0470735
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->10->1]	 Cost: 0.00167045
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0482261
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.0482261
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->8->4]	 Cost: 0.00114766
+  Admitted rate = 1
+D(l ,w ,q)= 0.0489938
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.0489938
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->9->5]	 Cost: 0.0012551
+  Admitted rate = 1
+D(l ,w ,q)= 0.0498356
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.0498356
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->6->3->7]	 Cost: 0.00108723
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0505858
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.0505858
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->10->2]	 Cost: 0.00221253
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0513492
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.0513492
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->1->5]	 Cost: 0.00141802
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0523276
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.0523276
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.00143933
+  Admitted rate = 1
+D(l ,w ,q)= 0.0533045
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.0533045
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->1->4]	 Cost: 0.00221455
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0540685
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.0540685
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.00227225
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0548369
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.0548369
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->2->10]	 Cost: 0.00256179
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0557207
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.0557207
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->5]	 Cost: 0.000931817
+  Admitted rate = 1
+D(l ,w ,q)= 0.0563477
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.0563477
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.00143969
+  Admitted rate = 1
+D(l ,w ,q)= 0.0573246
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.0573246
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.00258842
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0581998
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.0581998
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->8]	 Cost: 0.000773695
+  Admitted rate = 1
+D(l ,w ,q)= 0.0587176
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.0587176
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.000702278
+  Admitted rate = 1
+D(l ,w ,q)= 0.0591864
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.0591864
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->7->9]	 Cost: 0.00163359
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0603136
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.0603136
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.00227225
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.061082
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.061082
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->3->9]	 Cost: 0.00120389
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0619127
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.0619127
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->4->3]	 Cost: 0.00247239
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0627657
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.0627657
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->8->9->6]	 Cost: 0.00121685
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0636053
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.0636053
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.00106578
+  Admitted rate = 1
+D(l ,w ,q)= 0.0643247
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.0643247
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->10->7]	 Cost: 0.000914081
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0649554
+D(l ,w ,q)= 0.0649554
+------------------------Phase: 5------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.0649554
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.00241817
+  Admitted rate = 1
+D(l ,w ,q)= 0.0666064
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.0666064
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->2->4]	 Cost: 0.00172335
+  Admitted rate = 1
+D(l ,w ,q)= 0.067769
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.067769
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->7->5]	 Cost: 0.00179637
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0690085
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.0690085
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->9->7]	 Cost: 0.00141409
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0699842
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.0699842
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->2]	 Cost: 0.00350335
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0711761
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.0711761
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->5]	 Cost: 0.00205342
+  Admitted rate = 1
+D(l ,w ,q)= 0.0725765
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.0725765
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->3->6]	 Cost: 0.00227068
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0741433
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.0741433
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.00350485
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0753352
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.0753352
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->6->9]	 Cost: 0.00392084
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0766879
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.0766879
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.00401201
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0780536
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.0780536
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->2->5]	 Cost: 0.00136878
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.078998
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.078998
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.00241892
+  Admitted rate = 1
+D(l ,w ,q)= 0.080649
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.080649
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.00408225
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0820378
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.0820378
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->4->8]	 Cost: 0.000962038
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0827016
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.0827016
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.00111069
+  Admitted rate = 1
+D(l ,w ,q)= 0.0834502
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.0834502
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.00241735
+  Admitted rate = 1
+D(l ,w ,q)= 0.0851011
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.0851011
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.00365882
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0863464
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.0863464
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->9]	 Cost: 0.00147349
+  Admitted rate = 1
+D(l ,w ,q)= 0.0873453
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.0873453
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->1->3]	 Cost: 0.0037483
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.0886125
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.0886125
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->7->6]	 Cost: 0.00165081
+  Admitted rate = 1
+D(l ,w ,q)= 0.089724
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.089724
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->0->8]	 Cost: 0.00112646
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.0905012
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.0905012
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->7]	 Cost: 0.00111158
+  Admitted rate = 1
+D(l ,w ,q)= 0.0912496
+D(l ,w ,q)= 0.0912496
+------------------------Phase: 6------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.0912496
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.00407046
+  Admitted rate = 1
+D(l ,w ,q)= 0.0940397
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.0940397
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->8->4]	 Cost: 0.00257773
+  Admitted rate = 1
+D(l ,w ,q)= 0.0957906
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.0957906
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->9->5]	 Cost: 0.0028846
+  Admitted rate = 1
+D(l ,w ,q)= 0.0977533
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.0977533
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->7]	 Cost: 0.00193673
+  Admitted rate = 1
+D(l ,w ,q)= 0.0990704
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.0990704
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->4->2]	 Cost: 0.00558813
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.100998
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.100998
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->1->5]	 Cost: 0.00341574
+  Admitted rate = 1
+D(l ,w ,q)= 0.103329
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.103329
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.00345736
+  Admitted rate = 1
+D(l ,w ,q)= 0.105696
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.105696
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.00573634
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.107657
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.107657
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.00615164
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.109761
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.109761
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.00641738
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.111956
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.111956
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->5]	 Cost: 0.00172949
+  Admitted rate = 1
+D(l ,w ,q)= 0.113132
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.113132
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->3->6]	 Cost: 0.0038146
+  Admitted rate = 1
+D(l ,w ,q)= 0.115737
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.115737
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.00651007
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.117962
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.117962
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->9->8]	 Cost: 0.00117506
+  Admitted rate = 1
+D(l ,w ,q)= 0.118746
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.118746
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->8->9]	 Cost: 0.00130701
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.119648
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.119648
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->7->5->9]	 Cost: 0.00395497
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.122377
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.122377
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.0059428
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.12441
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.12441
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->4->8->9]	 Cost: 0.0022319
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.12595
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.12595
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->1->3]	 Cost: 0.00605589
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.128012
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.128012
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->10->7->6]	 Cost: 0.00253314
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.12976
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.12976
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.00177876
+  Admitted rate = 1
+D(l ,w ,q)= 0.130969
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.130969
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->3->7]	 Cost: 0.0014795
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.13199
+D(l ,w ,q)= 0.13199
+------------------------Phase: 7------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.13199
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->2->1]	 Cost: 0.00613445
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.136223
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.136223
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->6->4]	 Cost: 0.00360422
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.13871
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.13871
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->8->3->5]	 Cost: 0.0040406
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.141498
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.141498
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->7]	 Cost: 0.00311703
+  Admitted rate = 1
+D(l ,w ,q)= 0.143627
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.143627
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->2]	 Cost: 0.00924471
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.146797
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.146797
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->5]	 Cost: 0.00520985
+  Admitted rate = 1
+D(l ,w ,q)= 0.150373
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.150373
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->8->6]	 Cost: 0.0057521
+  Admitted rate = 1
+D(l ,w ,q)= 0.154313
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.154313
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->1->4]	 Cost: 0.00924943
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.157476
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.157476
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.0100132
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.160911
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.160911
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.0103687
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.164468
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.164468
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->1->5]	 Cost: 0.00242989
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.166144
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.166144
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.00582578
+  Admitted rate = 1
+D(l ,w ,q)= 0.170144
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.170144
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->9->6]	 Cost: 0.0115309
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.174122
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.174122
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->8]	 Cost: 0.00146428
+  Admitted rate = 1
+D(l ,w ,q)= 0.175112
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.175112
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.00185057
+  Admitted rate = 1
+D(l ,w ,q)= 0.176369
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.176369
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.00582444
+  Admitted rate = 1
+D(l ,w ,q)= 0.180368
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.180368
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.00973166
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.183707
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.183707
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->9]	 Cost: 0.00272228
+  Admitted rate = 1
+D(l ,w ,q)= 0.185565
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.185565
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->5->3]	 Cost: 0.00974366
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.188927
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.188927
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->8->6]	 Cost: 0.00332007
+  Admitted rate = 1
+D(l ,w ,q)= 0.191187
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.191187
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->3->8]	 Cost: 0.00271616
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.193061
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.193061
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->7]	 Cost: 0.00210996
+  Admitted rate = 1
+D(l ,w ,q)= 0.194496
+D(l ,w ,q)= 0.194496
+------------------------Phase: 8------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.194496
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.00982647
+  Admitted rate = 1
+D(l ,w ,q)= 0.201255
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.201255
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->2->4]	 Cost: 0.00451318
+  Admitted rate = 1
+D(l ,w ,q)= 0.204337
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.204337
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->10->5]	 Cost: 0.00560197
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.208203
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.208203
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->9->7]	 Cost: 0.00450875
+  Admitted rate = 1
+D(l ,w ,q)= 0.211282
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.211282
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->10->2]	 Cost: 0.0152641
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.216518
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.216518
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->7->5]	 Cost: 0.00849952
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.222383
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.222383
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.00878953
+  Admitted rate = 1
+D(l ,w ,q)= 0.228426
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.228426
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->1->4]	 Cost: 0.0153782
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.233703
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.233703
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->5->9]	 Cost: 0.016378
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.239353
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.239353
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6->10]	 Cost: 0.0180351
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.245575
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.245575
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->2->5]	 Cost: 0.00354211
+  Admitted rate = 1
+D(l ,w ,q)= 0.247988
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.247988
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->1->3->6]	 Cost: 0.00964137
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.25464
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.25464
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.0187726
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.261093
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.261093
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->9->8]	 Cost: 0.00201371
+  Admitted rate = 1
+D(l ,w ,q)= 0.262451
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.262451
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.00297651
+  Admitted rate = 1
+D(l ,w ,q)= 0.264484
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.264484
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.00982491
+  Admitted rate = 1
+D(l ,w ,q)= 0.271243
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.271243
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4->8]	 Cost: 0.0169135
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.277078
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.277078
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->3->9]	 Cost: 0.00393849
+  Admitted rate = 1
+D(l ,w ,q)= 0.279764
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.279764
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->7->3]	 Cost: 0.0160195
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.28529
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.28529
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->7->6]	 Cost: 0.00448486
+  Admitted rate = 1
+D(l ,w ,q)= 0.288352
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.288352
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.00297608
+  Admitted rate = 1
+D(l ,w ,q)= 0.290385
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.290385
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->3->7]	 Cost: 0.00283893
+  Admitted rate = 1
+D(l ,w ,q)= 0.29231
+D(l ,w ,q)= 0.29231
+------------------------Phase: 9------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.29231
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.0165873
+  Admitted rate = 1
+D(l ,w ,q)= 0.303733
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.303733
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->8->4]	 Cost: 0.00689001
+  Admitted rate = 1
+D(l ,w ,q)= 0.308454
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.308454
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->2->5]	 Cost: 0.00802372
+  Admitted rate = 1
+D(l ,w ,q)= 0.313957
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.313957
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->7]	 Cost: 0.00531375
+  Admitted rate = 1
+D(l ,w ,q)= 0.3176
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.3176
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->7->2]	 Cost: 0.0253244
+  ** New path! **
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.326337
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.326337
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->5]	 Cost: 0.0137955
+  Admitted rate = 1
+D(l ,w ,q)= 0.335836
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.335836
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.0148347
+  Admitted rate = 1
+D(l ,w ,q)= 0.346049
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.346049
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->1->4]	 Cost: 0.0256672
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.354873
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.354873
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->5->9]	 Cost: 0.0270102
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.364159
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.364159
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.0285067
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.373971
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.373971
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->1->5]	 Cost: 0.00497375
+  Admitted rate = 1
+D(l ,w ,q)= 0.377372
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.377372
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.0148351
+  Admitted rate = 1
+D(l ,w ,q)= 0.387586
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.387586
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.0302313
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.397991
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.397991
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->8]	 Cost: 0.00252119
+  Admitted rate = 1
+D(l ,w ,q)= 0.399709
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.399709
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->8->9]	 Cost: 0.00347454
+  Admitted rate = 1
+D(l ,w ,q)= 0.402075
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.402075
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->7->9]	 Cost: 0.0155557
+  Admitted rate = 1
+D(l ,w ,q)= 0.412778
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.412778
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.0270654
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.422094
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.422094
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->5->9]	 Cost: 0.00569475
+  Admitted rate = 1
+D(l ,w ,q)= 0.425992
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.425992
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->4->3]	 Cost: 0.0265237
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.435109
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.435109
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->10->7->6]	 Cost: 0.0064497
+  Admitted rate = 1
+D(l ,w ,q)= 0.439515
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.439515
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->7->4->8]	 Cost: 0.00463012
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.44271
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.44271
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->4->7]	 Cost: 0.00400121
+  Admitted rate = 1
+D(l ,w ,q)= 0.445437
+D(l ,w ,q)= 0.445437
+------------------------Phase: 10------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.445437
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->9->1]	 Cost: 0.0268563
+  Admitted rate = 1
+D(l ,w ,q)= 0.463935
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.463935
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->8->4]	 Cost: 0.011029
+  Admitted rate = 1
+D(l ,w ,q)= 0.471512
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.471512
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->10->5]	 Cost: 0.0115585
+  Admitted rate = 1
+D(l ,w ,q)= 0.479453
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.479453
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->7]	 Cost: 0.00861757
+  Admitted rate = 1
+D(l ,w ,q)= 0.485375
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.485375
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->2]	 Cost: 0.0423175
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.499954
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.499954
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->5]	 Cost: 0.023294
+  Admitted rate = 1
+D(l ,w ,q)= 0.516006
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.516006
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->3->6]	 Cost: 0.023746
+  Admitted rate = 1
+D(l ,w ,q)= 0.532357
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.532357
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.0426011
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.547032
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.547032
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.044625
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.562406
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.562406
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->2->10]	 Cost: 0.0480287
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.578941
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.578941
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->3->5]	 Cost: 0.00686292
+  Admitted rate = 1
+D(l ,w ,q)= 0.583644
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.583644
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->6]	 Cost: 0.0250494
+  Admitted rate = 1
+D(l ,w ,q)= 0.600905
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.600905
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.0490977
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.617819
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.617819
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->9->8]	 Cost: 0.00345974
+  Admitted rate = 1
+D(l ,w ,q)= 0.620174
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.620174
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->9]	 Cost: 0.00498537
+  Admitted rate = 1
+D(l ,w ,q)= 0.623593
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.623593
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->9]	 Cost: 0.0250455
+  Admitted rate = 1
+D(l ,w ,q)= 0.640854
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 0.640854
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->8]	 Cost: 0.0448436
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.656304
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 0.656304
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [7->9]	 Cost: 0.00802792
+  Admitted rate = 1
+D(l ,w ,q)= 0.661821
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 0.661821
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [2->1->3]	 Cost: 0.0435777
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.676823
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 0.676823
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [2->8->6]	 Cost: 0.00867077
+  Admitted rate = 1
+D(l ,w ,q)= 0.682773
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 0.682773
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [10->8]	 Cost: 0.00498492
+  Admitted rate = 1
+D(l ,w ,q)= 0.686192
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 0.686192
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [6->7]	 Cost: 0.0052398
+  Admitted rate = 1
+D(l ,w ,q)= 0.689784
+D(l ,w ,q)= 0.689784
+------------------------Phase: 11------------------------
+Iteration: (s, t)=(0, 1) 
+D(l ,w ,q)= 0.689784
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [0->1]	 Cost: 0.0423098
+  Admitted rate = 1
+D(l ,w ,q)= 0.718955
+Iteration: (s, t)=(0, 4) 
+D(l ,w ,q)= 0.718955
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->2->4]	 Cost: 0.0148319
+  Admitted rate = 1
+D(l ,w ,q)= 0.729155
+Iteration: (s, t)=(0, 5) 
+D(l ,w ,q)= 0.729155
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [0->9->5]	 Cost: 0.0161031
+  Admitted rate = 1
+D(l ,w ,q)= 0.740233
+Iteration: (s, t)=(0, 7) 
+D(l ,w ,q)= 0.740233
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [0->8->3->7]	 Cost: 0.0129181
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 0.749146
+Iteration: (s, t)=(1, 2) 
+D(l ,w ,q)= 0.749146
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [1->4->2]	 Cost: 0.0711941
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.773677
+Iteration: (s, t)=(4, 5) 
+D(l ,w ,q)= 0.773677
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->1->5]	 Cost: 0.0381334
+  Admitted rate = 1
+D(l ,w ,q)= 0.799958
+Iteration: (s, t)=(4, 6) 
+D(l ,w ,q)= 0.799958
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [4->6]	 Cost: 0.0393478
+  Admitted rate = 1
+D(l ,w ,q)= 0.827085
+Iteration: (s, t)=(3, 4) 
+D(l ,w ,q)= 0.827085
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->4]	 Cost: 0.0715762
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.851757
+Iteration: (s, t)=(3, 9) 
+D(l ,w ,q)= 0.851757
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [3->9]	 Cost: 0.0742988
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.877368
+Iteration: (s, t)=(0, 10) 
+D(l ,w ,q)= 0.877368
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->10]	 Cost: 0.0790124
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.904603
+Iteration: (s, t)=(10, 5) 
+D(l ,w ,q)= 0.904603
+  Remaining rate = 1.5	Mu*Objtive rate = 1.35
+  Path: [10->5]	 Cost: 0.00973081
+  Admitted rate = 1
+D(l ,w ,q)= 0.911296
+Iteration: (s, t)=(10, 6) 
+D(l ,w ,q)= 0.911296
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [10->3->6]	 Cost: 0.0410293
+  Admitted rate = 1
+D(l ,w ,q)= 0.939571
+Iteration: (s, t)=(0, 6) 
+D(l ,w ,q)= 0.939571
+  Remaining rate = 0.5	Mu*Objtive rate = 0.45
+  Path: [0->6]	 Cost: 0.0803121
+  Admitted rate = 0.5
+D(l ,w ,q)= 0.967254
+Iteration: (s, t)=(6, 8) 
+D(l ,w ,q)= 0.967254
+  Remaining rate = 2	Mu*Objtive rate = 1.8
+  Path: [6->8]	 Cost: 0.00435764
+  Admitted rate = 1
+D(l ,w ,q)= 0.970239
+Iteration: (s, t)=(2, 9) 
+D(l ,w ,q)= 0.970239
+  Remaining rate = 2.5	Mu*Objtive rate = 2.25
+  Path: [2->5->9]	 Cost: 0.00702576
+  Admitted rate = 1
+D(l ,w ,q)= 0.975055
+Iteration: (s, t)=(1, 9) 
+D(l ,w ,q)= 0.975055
+  Remaining rate = 1	Mu*Objtive rate = 0.9
+  Path: [1->4->8->9]	 Cost: 0.0410927
+  ** New path! **
+  Admitted rate = 1
+D(l ,w ,q)= 1.00341
+Iteration: (s, t)=(3, 8) 
+D(l ,w ,q)= 1.00341
+Iteration: (s, t)=(7, 9) 
+D(l ,w ,q)= 1.00341
+Iteration: (s, t)=(2, 3) 
+D(l ,w ,q)= 1.00341
+Iteration: (s, t)=(2, 6) 
+D(l ,w ,q)= 1.00341
+Iteration: (s, t)=(10, 8) 
+D(l ,w ,q)= 1.00341
+Iteration: (s, t)=(6, 7) 
+D(l ,w ,q)= 1.00341
+D(l ,w ,q)= 1.00341
+@@@@@@@@@@@@@@@@@@@ Algorithm done. Total phase: 11 @@@@@@@@@@@@@@@@@@@

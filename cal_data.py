@@ -17,9 +17,16 @@ def main():
         for row in reader[1:]:
             key = tuple(row[3:-1])
             with open('data/'+file_dict[key],'r') as f:
+
                 data = f.read()
-                result = re.findall(r'\d*\.\d*\sMbits/sec                  receiver', data)
-                value = result[0].split()[0]
+                #print data
+                result = re.findall(r'\d*\sKbits', data)
+                print result
+                if len(result) != 0:
+                    value = float(result[0].split()[0])/1000
+                else:
+                    value = -1
+                print file_dict[key],value
                 output.append(row[:-1]+[value])
     with open(file_name +'_mininet.csv','w') as f:
         writer = csv.writer(f)

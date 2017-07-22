@@ -17,6 +17,7 @@ from utility.path import path_install
 from sys import argv
 import time
 import csv
+import os
 
 class MyTopo( Topo ):
 
@@ -106,7 +107,7 @@ def start_run( net, path ):
             dst_port = p['dst_port']
             #net.terms += makeTerm(net.get('h'+ dst), cmd = "iperf3 -s -i 0 -f m -p %d"%(dst_port))
 
-            net.get('h'+ dst).cmd("iperf3 -s -i 0 -f m -p %d >%s &"%(dst_port,'data/'+str(m_count)+'-'+str(count)))
+            net.get('h'+ dst).cmd("iperf3 -s -i 0 -f k -p %d >%s &"%(dst_port,'data/'+str(m_count)+'-'+str(count)))
             p['file'] = str(m_count)+'-'+str(count)
             count += 1
             time.sleep(0.05)
@@ -124,6 +125,7 @@ def start_run( net, path ):
             #net.terms += makeTerm(net.get('h'+ src), cmd = "iperf3 -c %s -i 1 -b %sm -l 0.05K -t 5 -p %s -B %s --cport %s "%(ip_dst,str(bw),str(dst_port),ip_src,str(src_port)))
             net.get('h'+ src).cmd("iperf3 -c %s -i 1 -b %sm -l 0.05K -t 5 -p %s -B %s --cport %s &"%(ip_dst,str(bw),str(dst_port),ip_src,str(src_port)))
             time.sleep(0.005)
+    time.sleep(15)
 
 
 def write_file( data ):
@@ -141,6 +143,7 @@ def write_file( data ):
 
 
 def main():
+    os.system('sudo mn -c')
     if len(argv) == 3:
         file_graph = argv[1]
         file_path = argv[2]
@@ -159,7 +162,7 @@ def main():
     path = Path(file_path)
     path.set_path()
     start_run( net, path )
-    CLI(net)
+    #CLI(net)
     write_file( path.path_dict )
     net.stop()
 
