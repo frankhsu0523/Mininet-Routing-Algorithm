@@ -152,6 +152,8 @@ def main():
         file_graph = argv[1]
         file_path = argv[2]
         file_link = argv[3]
+        if not os.path.isfile(file_link+'.csv'):
+            file_link = None
     Topo = MyTopo(file_graph, file_link)
 
     net = Mininet( topo = Topo, build = False, ipBase='10.0.0.0/8',
