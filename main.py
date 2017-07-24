@@ -125,7 +125,7 @@ def start_run( net, path ):
             #net.terms += makeTerm(net.get('h'+ src), cmd = "iperf3 -c %s -i 1 -b %sm -l 0.05K -t 5 -p %s -B %s --cport %s "%(ip_dst,str(bw),str(dst_port),ip_src,str(src_port)))
             net.get('h'+ src).cmd("iperf3 -c %s -i 1 -b %sm -l 0.05K -t 5 -p %s -B %s --cport %s &"%(ip_dst,str(bw),str(dst_port),ip_src,str(src_port)))
             time.sleep(0.005)
-    time.sleep(15)
+    time.sleep(10)
 
 
 def write_file( data ):

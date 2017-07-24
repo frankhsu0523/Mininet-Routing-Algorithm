@@ -6,6 +6,7 @@ def main():
     output = list()
     file_dict = dict()
     file_name = argv[1]
+    w_file_name = argv[2]
     with open('output_info','r') as f:
         reader = csv.reader(f)
         for row in reader:
@@ -28,7 +29,7 @@ def main():
                     value = -1
                 print file_dict[key],value
                 output.append(row[:-1]+[value])
-    with open(file_name +'_mininet.csv','w') as f:
+    with open(w_file_name +'_mininet.csv','w') as f:
         writer = csv.writer(f)
         writer.writerows(output)
 
