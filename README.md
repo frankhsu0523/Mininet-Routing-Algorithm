@@ -6,11 +6,11 @@ The object of this project is to evaluate the offline algorithms' performance. W
 
 # How to use it
 
-'''Bash
+```Bash
 python main.py "graph_file (txt)" "path_file (csv)"
 
 python cal.py "path_file (csv)"
-'''
+```
 
 ****
 
